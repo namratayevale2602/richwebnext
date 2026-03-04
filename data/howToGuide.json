@@ -1,0 +1,46 @@
+{
+  "brochures": [
+    {
+      "id": 1,
+      "introduction": "Explore our comprehensive collection of resources designed to help your business grow. From detailed guides to industry-specific templates, we provide everything you need to succeed in your digital marketing efforts."
+    }
+  ],
+  "magzines": [
+    {
+      "id": 1,
+      "title": "Digital Marketing Guide 2024",
+      "subtitle": "Complete Guide to Digital Success",
+      "description": "A comprehensive guide covering all aspects of digital marketing including SEO, social media, email marketing, and more. Perfect for businesses looking to enhance their online presence.",
+      "document": "/pdfs/digital-marketing-guide.pdf",
+      "image": "/images/guides/digital-marketing.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Bulk SMS Marketing Handbook",
+      "subtitle": "Master SMS Marketing Strategies",
+      "description": "Learn how to effectively use bulk SMS for your marketing campaigns. This guide covers best practices, compliance guidelines, and successful case studies.",
+      "document": "/pdfs/bulk-sms-handbook.pdf",
+      "image": "/images/guides/bulk-sms.jpg"
+    }
+  ],
+  "samples": [
+    {
+      "id": 1,
+      "title": "Promotional SMS Templates",
+      "description": "Enhance your marketing campaigns with our curated Promotional SMS templates. Designed for maximum impact, these templates help you craft engaging messages for product launches, sales, and exclusive offers.",
+      "link": "/pdfs/promotional-sms-templates.pdf"
+    },
+    {
+      "id": 2,
+      "title": "Transactional SMS Templates",
+      "description": "Simplify your transactional communications with our ready-to-use Transactional SMS templates. Whether for order confirmations, payment alerts, account updates, or appointment reminders.",
+      "link": "/pdfs/transactional-sms-templates.pdf"
+    },
+    {
+      "id": 3,
+      "title": "OTP SMS Templates",
+      "description": "Secure your user interactions with our ready-to-use OTP SMS templates. Designed for delivering One-Time Passwords securely and efficiently for user authentication.",
+      "link": "/pdfs/otp-sms-templates.pdf"
+    }
+  ]
+}

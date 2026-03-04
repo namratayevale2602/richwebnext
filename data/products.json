@@ -1,0 +1,401 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product_name": "bulk-sms",
+      "slug": "bulk-sms",
+      "title": "Bulk SMS",
+      "subtitle": "Mass Communication Made Easy",
+      "fullDesc": "Reliable bulk SMS services for marketing campaigns, alerts, and notifications. Reach thousands instantly with our robust SMS platform.",
+      "detailedDesc": "Our Bulk SMS service allows you to send thousands of messages instantly with high delivery rates. Perfect for marketing campaigns, notifications, alerts, and customer engagement. Features include real-time analytics, scheduled messaging, and easy API integration. With open rates exceeding 98%, your message is seen instantly. This cost-effective channel helps businesses strengthen customer relationships and achieve marketing goals faster.",
+      "image": "/products/bulk-sms.png",
+      "subtypes": [
+        {
+          "id": 1,
+          "title": "Promotional SMS",
+          "description": "Promotional SMS are sent with the objective of promoting a product or service, and this category includes any sales and marketing messages, whether solicited by the recipient or not. These messages can only be sent to non-DND (Do Not Disturb) numbers between 9 AM and 9 PM.",
+          "image": "/subtypes/pramotionalSMS.png"
+        },
+        {
+          "id": 2,
+          "title": "Transactional SMS",
+          "description": "Transactional SMS are messages sent to customers to provide necessary information for using a product or service. For example, a bank might send an SMS to an account holder regarding their available account balance.",
+          "image": "/subtypes/transactionalSMS.png"
+        },
+        {
+          "id": 3,
+          "title": "OTP SMS",
+          "description": "OTP (One-Time Password) messages are secure, time-sensitive SMS used for authentication and verification. They are commonly used to confirm a user's identity during login or transactions.",
+          "image": "/subtypes/transactionalSMS.png"
+        }
+      ],
+      "benefits": [
+        {
+          "id": 1,
+          "title": "Maximize Your Reach with Bulk SMS",
+          "subtitle": "Engage Customers, Boost Sales and Deliver Instant Communication.",
+          "description": "Bulk SMS provides a direct, reliable way to connect with your audience for promotions, alerts, reminders, or updates. With open rates exceeding traditional email marketing, your message is seen instantly.",
+          "image": "/benefits/sms.png",
+          "list": [
+            "Send messages instantly for real-time communication.",
+            "Over 98% open rate ensures visibility.",
+            "Low-cost marketing with excellent ROI.",
+            "Reach anyone globally with a mobile phone.",
+            "Boost interaction with call-to-action features."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 1, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 2, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 3, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    },
+    {
+      "id": 2,
+      "product_name": "bulk-voice",
+      "slug": "bulk-voice",
+      "title": "Bulk Voice",
+      "subtitle": "Voice Broadcasting at Scale",
+      "fullDesc": "Professional bulk voice messaging services for customer engagement, alerts, and marketing campaigns with high delivery rates.",
+      "detailedDesc": "Reach your audience with personalized voice messages. Our Bulk Voice service supports multiple languages, scheduling, and detailed reporting. Deliver personalized voice messages to thousands of recipients instantly. Whether for promotions, updates, or alerts, this solution ensures your message is heard loud and clear, creating a lasting impression.",
+      "image": "/products/bulkvoicee.png",
+      "benefits": [
+        {
+          "id": 2,
+          "title": "Amplify Your Reach with Bulk Voice Solutions",
+          "subtitle": "Effortless Voice Messaging for Maximum Impact",
+          "description": "Communicate effectively with Bulk Voice services. Deliver personalized voice messages to thousands of recipients instantly. Whether for promotions, updates, or alerts, this solution ensures your message is heard loud and clear, creating a lasting impression.",
+          "image": "/benefits/img3.png",
+          "list": [
+            "Send messages to thousands of contacts simultaneously.",
+            "Deliver a human-like experience with customizable voice messages.",
+            "Save time and money compared to traditional communication methods.",
+            "Ideal for marketing campaigns, reminders, surveys, and emergency alerts."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 13, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 14, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 15, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    },
+    {
+      "id": 3,
+      "product_name": "whatsapp-service",
+      "slug": "whatsapp-service",
+      "title": "WhatsApp Service",
+      "subtitle": "Official WhatsApp Business API",
+      "fullDesc": "Official WhatsApp Business API services for marketing, customer support, and automated messaging with high engagement rates.",
+      "detailedDesc": "Integrate WhatsApp Business API for seamless customer communication. Send notifications, alerts, and marketing messages directly through WhatsApp. High engagement rates with rich media support and template messaging. Enhance your business communication with Bulk Messaging, Blue Tick Verification, and advanced WhatsApp Business API solutions.",
+      "image": "/products/whatsappservices.png",
+      "subtypes": [
+        {
+          "id": 13,
+          "title": "Bulk WhatsApp Messaging",
+          "description": "Effortlessly reach a wider audience with our Bulk WhatsApp Messaging solution. Send text, images, videos, and PDFs to thousands of users at once.",
+          "image": "/subtypes/img1.png"
+        },
+        {
+          "id": 14,
+          "title": "Blue Tick Verified WhatsApp",
+          "description": "Boost trust and credibility with a Blue Tick Verified WhatsApp account. Showcase your brand as authentic and reliable with WhatsApp's verified badge.",
+          "image": "/subtypes/img2.png"
+        },
+        {
+          "id": 15,
+          "title": "WhatsApp Business API",
+          "description": "Streamline customer communication with the powerful WhatsApp Business API. Automate responses, integrate with CRMs, and send personalized notifications.",
+          "image": "/subtypes/img2.png"
+        }
+      ],
+      "benefits": [
+        {
+          "id": 5,
+          "title": "Boost Your Business with Advanced WhatsApp Services",
+          "subtitle": "Bulk Messaging, Blue Tick Verification, and WhatsApp Business API Solutions",
+          "description": "Enhance your business communication with our WhatsApp services. From Bulk Messaging to Blue Tick Verification and advanced WhatsApp Business API, we provide tools to connect, engage, and grow efficiently.",
+          "image": "/benefits/img10.png",
+          "list": [
+            "Instantly reach a broad audience with promotional messages.",
+            "Build trust with a verified badge that ensures authenticity.",
+            "Automate responses with chatbots for faster customer service.",
+            "Drive better engagement with your official account."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 37, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 38, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 39, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    },
+    {
+      "id": 4,
+      "product_name": "digital-marketing",
+      "slug": "digital-marketing",
+      "title": "Digital Marketing",
+      "subtitle": "Complete Digital Marketing Solutions",
+      "fullDesc": "Comprehensive digital marketing services including SEO, social media marketing, PPC, and content marketing to grow your business online.",
+      "detailedDesc": "Comprehensive digital marketing services including SEO, SEM, social media marketing, and content strategy. Drive traffic, generate leads, and increase conversions with our data-driven approach. We help businesses establish strong online presence and achieve measurable results.",
+      "image": "/products/digitalmarketing.png",
+      "caseStudies": [
+        {
+          "id": 50,
+          "title": "Digital Marketing Campaigns",
+          "image": "/industries/digital-case.png",
+          "industry": "Marketing"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "product_name": "whats-chatbot",
+      "slug": "whats-chatbot",
+      "title": "WhatsApp Chatbot",
+      "subtitle": "AI-Powered WhatsApp Automation",
+      "fullDesc": "Intelligent WhatsApp chatbots for customer service, lead generation, and automated conversations. 24/7 customer support solutions.",
+      "detailedDesc": "Automate customer interactions with our intelligent WhatsApp Chatbot. Handle queries, provide support, and engage customers 24/7 with natural language processing and seamless integration. Streamline your customer service and boost engagement with AI-powered conversations.",
+      "image": "/products/whatsappchatbots.png",
+      "benefits": [
+        {
+          "id": 7,
+          "title": "Enhance Customer Engagement with WhatsApp Chatbot",
+          "subtitle": "Automate Conversations and Deliver Instant Support via WhatsApp",
+          "description": "Streamline your customer service and boost engagement with our WhatsApp Chatbot. This AI-powered solution enables 24/7 interaction, automating responses, answering FAQs, and guiding customers through their journey on your WhatsApp Business account.",
+          "image": "/benefits/img1.png",
+          "list": [
+            "Provide immediate replies to customer inquiries at any time of day.",
+            "Reduce wait times and improve customer satisfaction.",
+            "Keep your business accessible round-the-clock, even outside working hours.",
+            "Automate repetitive tasks such as FAQs, order status, or booking confirmations."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 1, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 2, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 3, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    },
+    {
+      "id": 6,
+      "product_name": "digital-auto",
+      "slug": "digital-auto",
+      "title": "Digital Automation",
+      "subtitle": "Streamline Your Business Processes",
+      "fullDesc": "Streamline your business processes with our digital automation solutions for marketing, sales, and customer relationship management.",
+      "detailedDesc": "Automate repetitive tasks and workflows with our digital automation solutions. From lead management to customer support, increase efficiency and reduce manual errors. Transform your business operations by streamlining processes, boosting efficiency, and enhancing productivity.",
+      "image": "/products/digitalautomationn.png",
+      "subtypes": [
+        {
+          "id": 16,
+          "title": "Customer Relationship Management (CRM)",
+          "description": "Optimize your customer interactions with our advanced CRM solutions. Track leads, manage customer data, and automate follow-ups to boost sales and improve client retention.",
+          "image": "/subtypes/img4.png"
+        },
+        {
+          "id": 17,
+          "title": "Content Management System (CMS)",
+          "description": "Simplify content creation and management with our intuitive CMS platform. Easily update your website, organize media, and ensure seamless user experiences.",
+          "image": "/subtypes/img5.png"
+        },
+        {
+          "id": 18,
+          "title": "Workflow Automation",
+          "description": "Transform your processes with Workflow Automation. Streamline repetitive tasks, improve team collaboration, and boost productivity with tailored solutions for your business needs.",
+          "image": "/subtypes/img6.png"
+        }
+      ],
+      "benefits": [
+        {
+          "id": 9,
+          "title": "Transform Your Business with Digital Automation",
+          "subtitle": "Streamline Processes, Boost Efficiency, and Enhance Productivity",
+          "description": "Digital Automation streamlines business operations by automating repetitive tasks, improving efficiency, reducing errors, and saving costs. It helps businesses scale seamlessly, enhance customer experiences, and focus on strategic growth.",
+          "image": "/benefits/img1.png",
+          "list": [
+            "Automate routine tasks to save time and reduce human error.",
+            "Speed up processes like data entry, customer inquiries, and reporting.",
+            "Enhance data reliability for better decision-making.",
+            "Allocate resources more effectively by focusing on high-impact tasks."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 1, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 2, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 3, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    },
+    {
+      "id": 7,
+      "product_name": "design-develop",
+      "slug": "design-develop",
+      "title": "Design Development",
+      "subtitle": "Web and Application Development",
+      "fullDesc": "Professional website design, web development, and mobile app development services to establish your strong digital presence.",
+      "detailedDesc": "Custom web and mobile application development services. From concept to deployment, we create responsive, scalable, and user-friendly solutions tailored to your business needs. Our expert team delivers high-quality digital products that engage users and drive business growth.",
+      "image": "/products/designdevelopementt.png"
+    },
+    {
+      "id": 8,
+      "product_name": "graphic-design",
+      "slug": "graphic-design",
+      "title": "Graphic Design",
+      "subtitle": "Creative Visual Solutions",
+      "fullDesc": "Professional graphic design services including logos, branding, marketing materials, and digital graphics for your business.",
+      "detailedDesc": "Professional graphic design services including branding, logo design, marketing materials, and social media graphics. Create compelling visual identities that resonate with your audience and help your brand stand out in a competitive market.",
+      "image": "/products/graphicDesignn.png",
+      "subtypes": [
+        {
+          "id": 7,
+          "title": "Logo Design",
+          "description": "Our Logo Design service creates unique, memorable logos that reflect your brand's identity. Tailored to your vision, we design logos that make a lasting impression.",
+          "image": "/subtypes/img1.png"
+        },
+        {
+          "id": 8,
+          "title": "Infographic Design",
+          "description": "Transform complex information into visually engaging infographics that simplify communication.",
+          "image": "/subtypes/img10.png"
+        },
+        {
+          "id": 9,
+          "title": "PowerPoint Design",
+          "description": "Elevate your presentations with custom PowerPoint designs that captivate and engage your audience.",
+          "image": "/subtypes/img1.png"
+        },
+        {
+          "id": 10,
+          "title": "Catalogue Design",
+          "description": "Create stunning product catalogues that showcase your offerings in a visually appealing and organized manner.",
+          "image": "/subtypes/img1.png"
+        },
+        {
+          "id": 11,
+          "title": "Business Card Design",
+          "description": "Make a strong first impression with custom-designed business cards that reflect your professional brand.",
+          "image": "/subtypes/img11.png"
+        },
+        {
+          "id": 12,
+          "title": "Web Banner Design",
+          "description": "Capture attention with eye-catching web banners designed to promote your brand or special offers.",
+          "image": "/subtypes/img12.png"
+        }
+      ],
+      "benefits": [
+        {
+          "id": 3,
+          "title": "Unleash Creativity with Expert Graphic Design",
+          "subtitle": "Crafting Visual Experiences That Captivate and Inspire",
+          "description": "Our Graphic Design services create compelling visuals that bring your brand's message to life, helping you connect with your audience and stand out in the market.",
+          "image": "/benefits/img10.png",
+          "list": [
+            "Builds a memorable and unique brand identity.",
+            "Simplifies complex messages through visuals.",
+            "Gives your business a polished and credible look.",
+            "Captures attention and drives interaction."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 25, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 26, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 27, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    },
+    {
+      "id": 9,
+      "product_name": "alert-system",
+      "slug": "alert-system",
+      "title": "Alert System",
+      "subtitle": "Real-time Notification Platform",
+      "fullDesc": "Custom alert and notification systems for businesses. Real-time alerts via SMS, voice, email, and push notifications.",
+      "detailedDesc": "Comprehensive alert system for emergency notifications, system alerts, and important updates. Multi-channel delivery including SMS, voice, email, and push notifications. Never miss important customer inquiries with automated alert systems that ensure prompt follow-ups.",
+      "image": "/products/alertsystems.png",
+      "benefits": [
+        {
+          "id": 6,
+          "title": "Never Miss a Lead with Miss Call Alert System",
+          "subtitle": "Stay Connected with Automated Alerts for Missed Calls",
+          "description": "The Miss Call Alert System ensures that you never miss an important customer inquiry. By automatically notifying you whenever a customer misses a call, this system helps you follow up promptly, improving customer satisfaction and lead conversion rates.",
+          "image": "/benefits/img10.png",
+          "list": [
+            "Get notified immediately whenever a call is missed.",
+            "Follow up on missed calls quickly to capture potential leads.",
+            "Ensure prompt responses and maintain customer trust.",
+            "No need for expensive call tracking systems."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 1, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 2, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 3, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    },
+    {
+      "id": 10,
+      "product_name": "ivr-system",
+      "slug": "ivr-system",
+      "title": "IVR System",
+      "subtitle": "Intelligent Voice Response Solutions",
+      "fullDesc": "Professional IVR system development for call centers and businesses. Automate customer interactions and improve call management.",
+      "detailedDesc": "Advanced IVR system to automate customer interactions, reduce wait times, and improve customer satisfaction. Features include natural language processing, CRM integration, and detailed analytics. Streamline call management and enhance customer experience with intelligent voice response.",
+      "image": "/products/ivrr.png",
+      "benefits": [
+        {
+          "id": 4,
+          "title": "Enhance Customer Experience with IVR Systems",
+          "subtitle": "Streamline Call Management and Improve Customer Interaction",
+          "description": "An IVR (Interactive Voice Response) system automates call handling by allowing customers to interact with a pre-recorded voice menu. It helps businesses efficiently route calls, provide information, and reduce wait times, ensuring a smooth and professional experience for customers.",
+          "image": "/benefits/img11.png",
+          "list": [
+            "Direct customers to the right department without delays.",
+            "Provide automated support around the clock, even outside business hours.",
+            "Reduce the need for live agents to handle routine inquiries.",
+            "Offer faster service with minimal wait times."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 1, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 2, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 3, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    },
+    {
+      "id": 11,
+      "product_name": "bulk-email",
+      "slug": "bulk-email",
+      "title": "Bulk Email",
+      "subtitle": "Email Marketing Platform",
+      "fullDesc": "Professional bulk email marketing services for newsletters, promotions, and customer engagement campaigns with high deliverability rates.",
+      "detailedDesc": "Send bulk email campaigns with high deliverability rates. Features include email templates, audience segmentation, A/B testing, and comprehensive analytics. Enhance your marketing strategy with effective email campaigns that reach a wider audience and drive engagement.",
+      "image": "/products/bulkemails.png",
+      "benefits": [
+        {
+          "id": 8,
+          "title": "Enhance Your Marketing Strategy with Bulk Email",
+          "subtitle": "Reach a Wider Audience with Effective Email Campaigns",
+          "description": "Bulk email allows businesses to efficiently communicate with large groups of recipients through personalized email campaigns. It helps in promoting products, services, or special offers to a targeted audience, driving engagement and increasing conversions.",
+          "image": "/benefits/img1.png",
+          "list": [
+            "Send emails to a large audience at once, increasing brand exposure.",
+            "Achieve high returns with a low-cost marketing solution.",
+            "Customize emails to increase engagement and relevance.",
+            "Monitor campaign performance and optimize future emails."
+          ]
+        }
+      ],
+      "caseStudies": [
+        { "id": 1, "title": "Hospital", "image": "/industries/hospital.png", "industry": "Healthcare" },
+        { "id": 2, "title": "Banking", "image": "/industries/banking.png", "industry": "Finance" },
+        { "id": 3, "title": "Insurance", "image": "/industries/insurance.png", "industry": "Finance" }
+      ]
+    }
+  ]
+}

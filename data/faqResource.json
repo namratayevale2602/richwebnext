@@ -1,0 +1,48 @@
+{
+  "products": [
+    { "id": 1, "title": "Bulk SMS" },
+    { "id": 2, "title": "IVR System" },
+    { "id": 3, "title": "Digital Marketing" },
+    { "id": 4, "title": "WhatsApp Service" },
+    { "id": 5, "title": "Bulk Voice" },
+    { "id": 6, "title": "Web Development" }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "product_id": 1,
+      "question": "What is Bulk SMS service?",
+      "answer": "Bulk SMS service allows you to send promotional or transactional messages to thousands of recipients simultaneously through our robust platform with high delivery rates."
+    },
+    {
+      "id": 2,
+      "product_id": 1,
+      "question": "How much does Bulk SMS cost?",
+      "answer": "We offer competitive pricing starting at Rs. 12,000 for 100,000 SMS with various packages to suit different business needs and volumes."
+    },
+    {
+      "id": 3,
+      "product_id": 2,
+      "question": "What is an IVR System?",
+      "answer": "IVR (Interactive Voice Response) is an automated telephone system that interacts with callers, gathers information, and routes calls to the appropriate recipients without human intervention."
+    },
+    {
+      "id": 4,
+      "product_id": 2,
+      "question": "Can IVR system handle multiple languages?",
+      "answer": "Yes, our IVR system supports multiple languages and can be customized to provide voice prompts in regional languages based on your customer demographics."
+    },
+    {
+      "id": 5,
+      "product_id": 3,
+      "question": "What digital marketing services do you offer?",
+      "answer": "We offer comprehensive digital marketing services including SEO, SEM, social media marketing, content marketing, email marketing, and analytics to help you grow your online presence."
+    },
+    {
+      "id": 6,
+      "product_id": 4,
+      "question": "What is WhatsApp Business API?",
+      "answer": "WhatsApp Business API is an official solution for businesses to communicate with customers at scale, send notifications, and provide customer support through the WhatsApp platform."
+    }
+  ]
+}
