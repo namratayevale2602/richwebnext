@@ -88,14 +88,15 @@ const benefitIcons = {
 
 // Image paths from public folder
 const serviceImages = {
-  "custom-software-development": "/images/services/customsoftware.jpg",
-  "web-development": "/images/services/webdeve.jpg",
-  "mobile-app-development": "/images/services/mobileappdeve.png",
-  "ui-ux-design": "/images/services/UiUx.png",
-  "ecommerce-solutions": "/images/services/ecommercesolu.jpg",
-  "cloud-solutions": "/images/services/cloudsol.jpg",
-  "api-integration": "/images/services/apiintegration.png",
-  "maintenance-support": "/images/services/maintenanceandsupport.png",
+  "custom-software-development": "/element/element5.png",
+  "web-development": "/element/element.png",
+  "mobile-app-development": "/element1/element.png",
+  "ui-ux-design": "/element/element2.png",
+  "ecommerce-solutions": "/element/element3.png",
+  "cloud-solutions": "/element/element4.png",
+  "api-integration": "/element/element.png",
+  "maintenance-support": "/element/element1.png",
+  "mobile-app-development": "/element3/element1.png",
 };
 
 const SoftDev = () => {
@@ -162,60 +163,84 @@ const SoftDev = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Image */}
-      <section className="relative overflow-hidden pt-24 pb-4 md:pt-32 md:pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 lg:grid-cols-2 md:gap-12 gap-7 items-center"
-          >
-            {/* Text Content */}
-            <div>
-              {/* Use SEO data for h1 if available, fallback to service data */}
-              <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-[#b8c7e0] mb-3 md:mb-6 leading-tight">
-                {seoData?.h1 || service.hero.title}
-              </h1>
+    <section className="relative overflow-hidden min-h-screen flex items-center">
+  <div className="container mx-auto px-4 relative z-10">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="grid grid-cols-1 lg:grid-cols-2 gap-7 md:gap-12 items-center"
+    >
+      {/* Text Content */}
+      <div className="py-12 md:py-20">
+        
+        
+        {/* Use SEO data for h1 if available, fallback to service data */}
+        <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-[#b8c7e0] mb-6 md:mb-8 leading-tight">
+          {seoData?.h1 || service.hero.title || "Healthcare"}
+        </h1>
 
-              <p className="md:text-xl text-[#0bc0df] mb-3 md:mb-8 leading-relaxed">
-                {seoData?.description || service.hero.description}
-              </p>
+        <p className="text-base md:text-lg lg:text-xl text-[#e5edfc] mb-6 md:mb-8 leading-relaxed max-w-xl">
+          {seoData?.description || service.hero.description || 
+            "Improve patient outcomes while reducing costs by combining technology innovation with process transformation. Reduce cost through digital integration and operational efficiencies. Drive revenue growth through increased patient acquisition and retention."}
+        </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mt-5 md:mt-10">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => router.push("/contact")}
-                  className="bg-white/12 text-[#e5edfc] md:px-8 md:py-4 py-2 rounded-xl md:font-semibold shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
-                >
-                  Get Free Consultation
-                  <ArrowRight className="h-5 w-5" />
-                </motion.button>
-              </div>
-            </div>
-
-            {/* Hero Image */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative h-64 md:h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src={serviceImages[slug] || serviceImages["web-development"]}
-                  alt={seoData?.h1 || service.label}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
-                />
-              </div>
-            </motion.div>
-          </motion.div>
+        {/* Featured Insight */}
+        <div className="mt-8 md:mt-12">
+          <p className="text-[#0bc0df] font-medium mb-2">Featured Insight</p>
+          <p className="text-[#b8c7e0] text-lg md:text-xl">[Featured insight content goes here]</p>
         </div>
-      </section>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 mt-8 md:mt-12">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => router.push("/contact")}
+            className="bg-[#0bc0df] text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl flex items-center justify-center gap-2 transition-all hover:bg-[#0aa8c7]"
+          >
+            Get Free Consultation
+            <ArrowRight className="h-5 w-5" />
+          </motion.button>
+        </div>
+      </div>
+    </motion.div>
+  </div>
+
+  {/* Right Side - Full Height Image */}
+  <motion.div 
+    initial={{ opacity: 0, scale: 1.1 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8, delay: 0.2 }}
+    className="hidden lg:block absolute top-0 right-0 w-1/2 h-full"
+  >
+    <div className="relative w-full h-full">
+      <Image
+        src={serviceImages[slug] || serviceImages["healthcare"] || serviceImages["web-development"]}
+        alt={seoData?.h1 || service.label || "Healthcare"}
+        fill
+        className="object-cover object-center"
+        sizes="50vw"
+        priority
+        quality={100}
+      />
+     
+    </div>
+  </motion.div>
+
+  {/* Mobile Image - visible on smaller screens */}
+  <div className="lg:hidden relative w-full h-[300px] sm:h-[400px] mt-8">
+    <Image
+      src={serviceImages[slug] || serviceImages["healthcare"] || serviceImages["web-development"]}
+      alt={seoData?.h1 || service.label || "Healthcare"}
+      fill
+      className="object-cover object-center"
+      sizes="100vw"
+      priority
+    />
+  </div>
+</section>
+
 
       {/* Rest of your component remains the same */}
       {/* Features Grid */}

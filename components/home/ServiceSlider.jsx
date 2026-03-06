@@ -27,14 +27,13 @@ const designdevelopementt = "/productsimg/designdevelopementt.png";
 const digitalautomationn = "/productsimg/digitalautomation.png";
 const graphicDesignn = "/productsimg/graphicDesignn.png";
 const ivrr = "/productsimg/ivrsystem.png";
-const outdoormarketingg = "/productsimg/outdoormarketingg.png";
 const whatsappchatbots = "/productsimg/whatsAppchatbot.png";
-const whatsappservices = "/productsimg/whatsappservices.png";
+const whatsappservices = "/productsimg/whatsappservice.png";
 const designmarketingg = "/productsimg/designmarketingg.png";
 const digitalmarketing = "/productsimg/digitalmarketing.png";
 
 // For audio files in Next.js
-const audioFile = "/sounds/flipcard.mp3";
+const audioFile = "/sound/flipcard.mp3";
 
 const ServiceSlider = () => {
   const router = useRouter();
@@ -44,12 +43,18 @@ const ServiceSlider = () => {
   const [isInView, setIsInView] = useState(false);
   const [hasPlayedIntroSound, setHasPlayedIntroSound] = useState(false);
   const [isAudioReady, setIsAudioReady] = useState(false);
+  const [isMounted, setIsMounted] = useState(false); // Add mounted state
   const autoPlayRef = useRef(null);
   const audioRef = useRef(null);
   const componentRef = useRef(null);
   const observerRef = useRef(null);
   const touchStartX = useRef(0);
   const cardsPerView = 5;
+
+  // Handle mounting
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Initialize audio
   useEffect(() => {
@@ -246,23 +251,14 @@ const ServiceSlider = () => {
         category: "Marketing",
         slug: "bulk-email",
       },
-      {
-        id: 12,
-        title: "Outdoor Marketing",
-        product_name: "outdoor-marketing",
-        description:
-          "Comprehensive outdoor marketing services including hoardings, billboards, transit ads, and OOH advertising for maximum brand visibility.",
-        image: outdoormarketingg,
-        icon: Building,
-        category: "Marketing",
-        slug: "outdoor-marketing",
-      },
+      
     ],
   };
 
-  // Handle card click for navigation
-  const handleCardClick = useCallback((product, e) => {
-    if (isAnimating || e.target.closest('button')) {
+  // Handle card click for navigation - ONLY center card is clickable
+  const handleCardClick = useCallback((product, isCenter, e) => {
+    // Prevent click if animating, if clicked on a button, or if not center card
+    if (isAnimating || e.target.closest('button') || !isCenter) {
       return;
     }
     router.push(`/products/${product.slug}`);
@@ -413,7 +409,7 @@ const ServiceSlider = () => {
     if (isAutoPlaying && !isAnimating && isInView) {
       autoPlayRef.current = setInterval(() => {
         nextSlide();
-      }, 5000); // Changed to 5 seconds for better UX
+      }, 5000);
     } else if (autoPlayRef.current) {
       clearInterval(autoPlayRef.current);
     }
@@ -429,6 +425,27 @@ const ServiceSlider = () => {
     setIsAutoPlaying(!isAutoPlaying);
   }, [isAutoPlaying]);
 
+  // Return null during SSR to prevent hydration mismatch
+  if (!isMounted) {
+    return (
+      <section className="relative py-16 overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              {productsData.sectionTitle}
+            </h1>
+            <p className="text-xl text-blue-400 max-w-3xl mx-auto">
+              {productsData.sectionDescription}
+            </p>
+          </div>
+          <div className="flex items-center justify-center min-h-[600px] md:min-h-[700px]">
+            <div className="text-white">Loading services...</div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   if (!productsData.products || productsData.products.length === 0) {
     return (
       <section className="relative py-16 bg-transparent overflow-hidden">
@@ -440,7 +457,7 @@ const ServiceSlider = () => {
   return (
     <section
       ref={componentRef}
-      className="relative py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden"
+      className="relative py-16 overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:20px_20px]" />
@@ -519,7 +536,7 @@ const ServiceSlider = () => {
                     className={`
                       relative transition-all duration-500 ease-out
                       ${isAnimating ? "transition-all duration-300" : ""}
-                      ${isCenter ? "cursor-pointer" : "cursor-pointer"}
+                      ${isCenter ? "cursor-pointer" : "cursor-default"}
                       group
                     `}
                     style={{
@@ -530,15 +547,14 @@ const ServiceSlider = () => {
                       maxWidth: isCenter ? "320px" : "220px",
                       transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
                     }}
-                    onClick={(e) => handleCardClick(product, e)}
+                    onClick={(e) => handleCardClick(product, isCenter, e)}
                   >
                     {/* Card with Image and Text Overlay */}
                     <div
                       className={`
                       relative rounded-2xl overflow-hidden
-                      ${isCenter ? "h-[500px] shadow-2xl" : "h-[400px] shadow-xl"}
+                      ${isCenter ? "h-[500px]" : "h-[400px]"}
                       transition-all duration-500
-                      group-hover:shadow-blue-500/20
                     `}
                     >
                       {/* Product Image */}
@@ -547,51 +563,57 @@ const ServiceSlider = () => {
                           src={product.image}
                           alt={product.title}
                           fill
-                          className="object-cover transition-transform duration-700 group-hover:scale-110"
+                          className="object-cover transition-transform duration-700"
                           priority={isCenter}
                           sizes={isCenter ? "320px" : "220px"}
                         />
-                        
-                    
                       </div>
 
-                      {/* Text Content - Always at bottom */}
-                      <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-500 translate-y-0">
-                      
-                        {/* Title */}
-                        <h3
-                          className={`
-                            font-bold mb-2 transition-all duration-300
-                            ${isCenter ? "text-2xl" : "text-lg"}
-                            group-hover:text-blue-400
-                          `}
-                        >
-                          {product.title}
-                        </h3>
-                        
-                        {/* Description - Only visible for center card or on hover */}
-                        <div className={`
-                          transition-all duration-500 overflow-hidden
-                          ${isCenter 
-                            ? "max-h-20 opacity-100" 
-                            : "max-h-0 opacity-0 group-hover:max-h-20 group-hover:opacity-100"
-                          }
-                        `}>
-                          <p className="text-sm text-gray-200 line-clamp-2">
-                            {product.description}
-                          </p>
+                      {/* Text Content - Always at bottom with fixed height - Use inline styles to prevent hydration mismatch */}
+                      <div 
+                        className="absolute bottom-0 left-0 right-0 text-white transform transition-transform duration-500 translate-y-0"
+                        style={{
+                          height: isCenter ? "180px" : "140px",
+                          width: "100%",
+                        }}
+                      >
+                        {/* Content wrapper with padding */}
+                        <div className="absolute bottom-0 left-0 right-0 p-6 px-18">
+                          {/* Title */}
+                          <h3
+                            className={`
+                              font-bold mb-2 transition-all duration-300
+                              ${isCenter ? "text-2xl" : "text-lg"}
+                              group-hover:text-blue-400
+                              ${!isCenter ? "line-clamp-1" : ""}
+                            `}
+                          >
+                            {product.title}
+                          </h3>
                           
-                          {/* Category Tag */}
-                          <div className="mt-2">
-                            <span className="text-xs px-2 py-1 bg-blue-500/20 rounded-full text-blue-300">
-                              {product.category}
-                            </span>
+                          {/* Description - Only visible for center card or on hover */}
+                          <div className={`
+                            transition-all duration-500 overflow-hidden
+                            ${isCenter 
+                              ? "max-h-20 opacity-100" 
+                              : "max-h-0 opacity-0 group-hover:max-h-20 group-hover:opacity-100"
+                            }
+                          `}>
+                            <p className="text-sm text-gray-200 line-clamp-2">
+                              {product.description}
+                            </p>
+                            
+                            {/* Category Tag */}
+                            <div className="mt-2">
+                              <span className="text-xs px-2 py-1 bg-blue-500/20 rounded-full text-blue-300">
+                                {product.category}
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
 
-                      {/* Hover effect border */}
-                      <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-400/50 rounded-2xl transition-all duration-300" />
+                    
                     </div>
                   </div>
                 );
@@ -600,15 +622,7 @@ const ServiceSlider = () => {
           </div>
         </div>
 
-        {/* Auto-play Toggle Button */}
-        <div className="flex justify-center mt-8">
-          <button
-            onClick={toggleAutoPlay}
-            className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-all duration-300"
-          >
-            {isAutoPlaying ? "Pause Auto-play" : "Start Auto-play"}
-          </button>
-        </div>
+       
       </div>
     </section>
   );

@@ -36,7 +36,7 @@ const Products = () => {
   // Initialize audio - SIMPLIFIED VERSION
   useEffect(() => {
     try {
-      audioRef.current = new Audio("/sounds/flipcard.mp3");
+      audioRef.current = new Audio("/sound/flipcard.mp3");
       audioRef.current.volume = 0.3;
       audioRef.current.preload = "auto";
       setIsAudioReady(true);

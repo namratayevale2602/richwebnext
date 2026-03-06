@@ -94,7 +94,7 @@ const HeroSection = () => {
             <div className="space-y-8 lg:space-y-12">
               <div className="space-y-6">
                 <motion.h1 className="text-3xl text-[#e5edfc] sm:text-6xl lg:text-7xl font-bold tracking-tight">
-                  Transform Your Digital Vision
+                  Transform Your Digital Vision {" "}
                   {/* <motion.span
                     className="block bg-gradient-to-r from-[#0cc0e1] via-[#83bfdf] to-[#137bca] bg-clip-text text-transparent mt-4"
                     animate={{ backgroundPosition: ["0%", "100%"] }}

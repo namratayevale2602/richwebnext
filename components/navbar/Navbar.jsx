@@ -486,14 +486,14 @@ const Navbar = () => {
       <motion.nav
         className={`${
           scrolled
-            ? "bg-white/12 backdrop-blur-xl "
-            : "bg-white/12 backdrop-blur-xl"
+            ? "bg-[#e7e7e7] backdrop-blur-xl "
+            : "bg-[#cccccc] backdrop-blur-xl"
         } transition-all duration-300`}
       >
         <div className="max-w-[1650px] mx-auto px-6 flex justify-between items-center">
           {/* Logo */}
           <motion.div
-            className="flex items-center bg-white rounded-b-4xl px-8"
+            className="flex items-center rounded-b-4xl px-8"
             whileHover={{ scale: 1.03 }}
           >
             <Link
@@ -514,7 +514,7 @@ const Navbar = () => {
                   href={item.path}
                   onClick={closeAllMenus}
                   className={`px-4 py-2 font-medium uppercase tracking-wider text-sm relative transition-colors cursor-pointer ${
-                    isActive(item.path) ? "text-[#e5edfc]" : "text-[#b8c7e0]"
+                    isActive(item.path) ? "text-[#000000]" : "text-[#000000]"
                   }`}
                 >
                   <span className="whitespace-nowrap">{item.label}</span>
@@ -544,7 +544,7 @@ const Navbar = () => {
                 onMouseEnter={() => setOpenDropdown(department.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <button className="flex items-center text-[#b8c7e0] transition-colors px-4 py-2 font-medium uppercase tracking-wider text-sm relative hover:text-[#e5edfc] group">
+                <button className="flex items-center text-[#000000] transition-colors px-4 py-2 font-medium uppercase tracking-wider text-sm relative hover:text-[#e5edfc] group">
                   <span className="whitespace-nowrap">{department.label}</span>
                   <ChevronDown
                     className={`h-3 w-3 ml-1 transition-transform ${
@@ -687,8 +687,8 @@ const Navbar = () => {
                 onClick={closeAllMenus}
                 className={`px-4 py-2 font-medium uppercase tracking-wider text-sm relative transition-colors cursor-pointer ${
                   isActive(contactItem.path)
-                    ? "text-[#b8c7e0]"
-                    : "text-[#b8c7e0]"
+                    ? "text-[#000000]"
+                    : "text-[#000000]"
                 }`}
               >
                 <span className="whitespace-nowrap">{contactItem.label}</span>

@@ -26,8 +26,8 @@ export default function Home() {
     <SeoWrapper pageUrl="/" schemas={[breadcrumb]} >
       <main>
         <HeroSection />
-        <Hero />
-        <Products />
+        {/* <Hero /> */}
+        {/* <Products /> */}
         <ServiceSlider />
         <Counter />
         <TrustedClientSection />

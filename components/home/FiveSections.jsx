@@ -40,11 +40,11 @@ const FiveSections = () => {
   return (
     <div className="w-full">
         {/* Header */}
-      <div className="mb-12 text-center">
+      {/* <div className="mb-12 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-[#b8c7e0]">
           How We Work
         </h1>
-      </div>
+      </div> */}
       {sections.map((section, index) => (
         <motion.section
           key={index}
