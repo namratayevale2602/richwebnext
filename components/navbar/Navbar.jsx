@@ -544,7 +544,7 @@ const Navbar = () => {
                 onMouseEnter={() => setOpenDropdown(department.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <button className="flex items-center text-[#000000] transition-colors px-4 py-2 font-medium uppercase tracking-wider text-sm relative hover:text-[#e5edfc] group">
+                <button className="flex items-center text-[#000000] transition-colors px-4 py-2 font-medium uppercase tracking-wider text-sm relative group">
                   <span className="whitespace-nowrap">{department.label}</span>
                   <ChevronDown
                     className={`h-3 w-3 ml-1 transition-transform ${
@@ -579,7 +579,7 @@ const Navbar = () => {
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
                     <div className="p-3">
-                      <div className="mb-6">
+                      <div className="mb-2">
                         <Link
                           href={department.path}
                           onClick={closeAllMenus}
@@ -604,7 +604,7 @@ const Navbar = () => {
                                 key={service.label}
                                 href={service.path}
                                 onClick={closeAllMenus}
-                                className="group block p-4 rounded-lg hover:bg-white/12 transition-all border border-transparent hover:border-white/20 cursor-pointer"
+                                className="group block p-2 rounded-lg hover:bg-white/12 transition-all border border-transparent hover:border-white/20 cursor-pointer"
                               >
                                 <div className="flex items-start gap-4">
                                   <div className="w-12 h-12 flex items-center justify-center bg-[#e5edfc] rounded-lg flex-shrink-0">
@@ -620,7 +620,7 @@ const Navbar = () => {
                                     <h4 className="font-semibold text-[#b8c7e0] transition-colors">
                                       {service.label}
                                     </h4>
-                                    <p className="text-sm text-[#e5edfc] mt-1">
+                                    <p className="text-sm text-[#e5edfc]">
                                       {service.description}
                                     </p>
                                   </div>
@@ -637,7 +637,7 @@ const Navbar = () => {
                                 key={service.label}
                                 href={service.path}
                                 onClick={closeAllMenus}
-                                className="group block p-4 rounded-lg hover:bg-white/12 transition-all border border-transparent hover:border-white/20 cursor-pointer"
+                                className="group block p-2 rounded-lg hover:bg-white/12 transition-all border border-transparent hover:border-white/20 cursor-pointer"
                               >
                                 <div className="flex items-start gap-4">
                                   <div className="w-12 h-12 flex items-center justify-center bg-[#e5edfc] rounded-lg flex-shrink-0">
@@ -653,7 +653,7 @@ const Navbar = () => {
                                     <h4 className="font-semibold text-[#b8c7e0]">
                                       {service.label}
                                     </h4>
-                                    <p className="text-sm text-[#e5edfc] mt-1">
+                                    <p className="text-sm text-[#e5edfc]">
                                       {service.description}
                                     </p>
                                   </div>
@@ -664,7 +664,7 @@ const Navbar = () => {
                       </div>
 
                       {/* Department CTA */}
-                      <div className="mt-8 pt-6 border-t border-white/20">
+                      <div className="mt-2 pt-2 border-t border-white/20">
                         <Link
                           href={department.path}
                           onClick={closeAllMenus}
