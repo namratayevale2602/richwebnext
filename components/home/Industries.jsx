@@ -102,10 +102,10 @@ const Industries = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-transparent p-4 sm:p-6 lg:p-8">
+    <div className="w-full min-h-screen bg-[#f4f4f4] p-4 sm:p-6 lg:p-8">
       {/* Header */}
       <div className="mb-8 sm:mb-10 lg:mb-12 text-center">
-        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#b8c7e0]">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#092b5d]">
           Industries
         </h1>
       </div>

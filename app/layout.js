@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import VideoBackground from "@/components/fixed/VideoBackground";
+import VideoLoaderWrapper from "@/components/loder/VideoLoaderWrapper";
 
 export const metadata = {
   metadataBase: new URL(siteSEO.baseUrl),
@@ -236,12 +237,14 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-gray-50 font-sans antialiased min-h-screen">
-        <VideoBackground />
-        <main className="min-h-screen">
-          <Navbar />
-          {children}
-          <Footer />
-          </main>
+       <VideoLoaderWrapper>
+          <VideoBackground />
+            <main className="min-h-screen">
+              <Navbar />
+              {children}
+              <Footer />
+            </main>
+       </VideoLoaderWrapper>
       </body>
     </html>
   );

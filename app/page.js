@@ -14,6 +14,7 @@ import Offer from "@/components/home/Offer";
 import Testimonials from "@/components/fixed/Testimonials";
 import Faq from "@/components/home/Faq";
 import ServiceSlider from "@/components/home/ServiceSlider";
+import Banner from "@/components/home/Banner";
 
 export const metadata = buildMetadata("home");
 
@@ -24,21 +25,23 @@ export default function Home() {
   return (
     <>
     <SeoWrapper pageUrl="/" schemas={[breadcrumb]} >
-      <main>
-        <HeroSection />
-        {/* <Hero /> */}
-        {/* <Products /> */}
-        <ServiceSlider />
-        <Counter />
-        <TrustedClientSection />
-        <ServicesWeOffer />
-        <Industries />
-        {/* <SlidingText /> */}
-        <FiveSections />
-        <Offer />
-        <Testimonials />
-        <Faq />
-      </main>
+        <main>
+          <Banner />
+          <HeroSection />
+          {/* <Hero /> */}
+          {/* <Products /> */}
+          <ServiceSlider />
+          <Counter />
+          <TrustedClientSection />
+          <ServicesWeOffer />
+          <Industries />
+          {/* <SlidingText /> */}
+          <FiveSections />
+          <Offer />
+          <Testimonials />
+          <Faq />
+        </main>
+      
     </SeoWrapper>
     </>
   );

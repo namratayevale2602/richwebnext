@@ -578,7 +578,7 @@ const Navbar = () => {
                     onMouseEnter={() => setOpenDropdown(department.label)}
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
-                    <div className="p-6">
+                    <div className="p-3">
                       <div className="mb-6">
                         <Link
                           href={department.path}
